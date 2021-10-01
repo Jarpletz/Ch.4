@@ -1,0 +1,4 @@
+﻿  ch 4 hw 2- right triangles.cpp
+C:\Users\rothp\OneDrive\Documents\GitHub\Ch.4\ch 4 hw 2- right triangles\ch 4 hw 2- right triangles.cpp(24,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\rothp\OneDrive\Documents\GitHub\Ch.4\ch 4 hw 2- right triangles\ch 4 hw 2- right triangles.cpp(13,9): warning C4101: 'bigAngle': unreferenced local variable
+  ch 4 hw 2- right triangles.vcxproj -> C:\Users\rothp\OneDrive\Documents\GitHub\Ch.4\ch 4 hw 2- right triangles\Debug\ch 4 hw 2- right triangles.exe
