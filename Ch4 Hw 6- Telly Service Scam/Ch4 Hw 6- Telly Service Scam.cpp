@@ -6,37 +6,40 @@ using namespace std;
 
 int main()
 {
-    int number;
+    float number;
     char type;
-    float dayMin, nightMin, total;
+    float dayMin, nightMin, total=0;
 
     cout << "Ring Ring Cha-shing Cell Service\n Monthly Bill Calculator\n\n";
-    cout << "Account Number: ";
+    cout <<left<<setw(53)<<setfill('.') << "Account Number: ";
     cin >> number;
-    MARKER: cout << "Service Plan Code (R or P)";
+    cin.ignore(1000000, '\n');
+    MARKER: cout << setw(53) << setfill('.') << "Service Plan Code (R or P)";
     cin >>type;
+    cin.ignore(1000000, '\n');
 
     switch (type) {
     case 'P':
     case 'p':
-        cout << "Total Daytime Minutes Used (Between 6AM and 6PM):";
+        cout << setw(53) << setfill('.') << "Total Daytime Minutes Used (Between 6AM and 6PM):";
         cin >> dayMin;
-        cout << "Total Nighttime Minutes Used (Between 6PM and 6AM):";
+        cout << setw(53) << setfill('.') << "Total Nighttime Minutes Used (Between 6PM and 6AM):";
         cin >> nightMin;
+        total = 25;
         if (75 < dayMin) {
-            total += 0.1 * (dayMin - 75);
+            total += 0.1f * (dayMin - 75);
         }
         if (100 <nightMin) {
-            total += 0.05 * (nightMin - 100);
+            total += 0.05f * (nightMin - 100);
         }
         break;
     case 'R':
     case 'r':
         total = 10;
-        cout << "Total Minutes Used:";
+        cout << setw(53) << setfill('.') << "Total Minutes Used:";
         cin >> dayMin;
         if (50 < dayMin) {
-            total += 0.2 * (dayMin - 50);
+            total += 0.2f * (dayMin - 50);
         }
 
         break;
@@ -44,6 +47,9 @@ int main()
             cout << "INVALID PLAN CODE: Please input correct Service Plan Code!\n";
             goto MARKER;
     }
+
+    cout << setw(53) << setfill('.') << "Total Due:" << "$"<<total << endl;
+
 
     return 0;
 }
