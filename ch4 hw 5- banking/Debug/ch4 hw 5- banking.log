@@ -1,5 +1,0 @@
-﻿  ch4 hw 5- banking.cpp
-C:\Users\rothp\OneDrive\Documents\GitHub\Ch.4\ch4 hw 5- banking\ch4 hw 5- banking.cpp(45,38): warning C4305: '*=': truncation from 'double' to 'float'
-C:\Users\rothp\OneDrive\Documents\GitHub\Ch.4\ch4 hw 5- banking\ch4 hw 5- banking.cpp(48,38): warning C4305: '*=': truncation from 'double' to 'float'
-C:\Users\rothp\OneDrive\Documents\GitHub\Ch.4\ch4 hw 5- banking\ch4 hw 5- banking.cpp(58,34): warning C4305: '*=': truncation from 'double' to 'float'
-  ch4 hw 5- banking.vcxproj -> C:\Users\rothp\OneDrive\Documents\GitHub\Ch.4\ch4 hw 5- banking\Debug\ch4 hw 5- banking.exe
